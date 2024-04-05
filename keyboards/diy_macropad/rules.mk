@@ -3,6 +3,12 @@ MCU = RP2040
 
 BOOTLOADER = rp2040
 WS2812_DRIVER = vendor
+WS2812_DRIVER_REQUIRED = yes
+
+RGB_MATRIX_ENABLE = yes
+RGB_MATRIX_DRIVER = ws2812
+
+VIA_ENABLE = yes
 
 # Build Options
 #   comment out to disable the options.
@@ -16,4 +22,4 @@ SLEEP_LED_ENABLE ?= no  # Breathing sleep LED during USB suspend
 NKRO_ENABLE ?= yes		# USB Nkey Rollover - if this doesn't work, see here: https://github.com/tmk/tmk_keyboard/wiki/FAQ#nkro-doesnt-work
 BACKLIGHT_ENABLE ?= no  # Enable keyboard backlight functionality
 AUDIO_ENABLE ?= no
-RGBLIGHT_ENABLE ?= yes
+# RGBLIGHT_ENABLE ?= yes
